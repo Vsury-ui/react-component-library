@@ -1,29 +1,53 @@
 {
-  "name": "react-components-library",
+  "name": "@Vsury-ui/react-components-library",
   "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c --bundleConfigAsCjs"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "vivek",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.1",
+    "@storybook/addon-a11y": "^9.0.15",
+    "@storybook/addon-docs": "^9.0.15",
+    "@storybook/addon-onboarding": "^9.0.15",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-vitest": "^9.0.15",
+    "@storybook/react-vite": "^9.0.15",
     "@types/react": "^19.1.8",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
+    "autoprefixer": "^10.4.21",
+    "classnames": "^2.5.1",
+    "playwright": "^1.53.2",
+    "postcss": "^8.5.6",
     "react": "^19.1.0",
+    "storybook": "^9.0.15",
+    "tailwindcss": "^3.4.17",
     "tslib": "^2.8.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.4",
+    "@tailwindcss/postcss": "^4.1.11",
+    "lucide-react": "^0.525.0",
     "rollup": "^4.44.1",
     "rollup-plugin-dts": "^6.2.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Vsury-ui"
   }
 }
